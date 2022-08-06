@@ -32,4 +32,7 @@ public class LoginPage extends BasePageObject {
     click(MobileBy.id("login"));
   }
 
+  public void longPressBtnLogin() {
+    longPress(MobileBy.id("login"));
+  }
 }

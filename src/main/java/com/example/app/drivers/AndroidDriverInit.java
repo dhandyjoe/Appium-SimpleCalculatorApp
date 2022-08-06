@@ -34,13 +34,14 @@ public class AndroidDriverInit {
 //    }
 
 //    caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
-//    caps.setCapability(MobileCapabilityType.DEVICE_NAME, "device");
-//    caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-//    caps.setCapability(MobileCapabilityType.APP, "/Users/hendrione/Code/APPS/app-debug_v.1.0.apk");
+    caps.setCapability(MobileCapabilityType.DEVICE_NAME, "device");
+    caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
+    caps.setCapability(MobileCapabilityType.APP, "/home/dhandyjoe/Downloads/sample-apk.apk");
 //    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-//    //additional
+    //additional
 //    caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120);
 //    caps.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+
     //inisialisasi Appium
     String url = "http://localhost:4723/wd/hub";
     try {
@@ -55,5 +56,4 @@ public class AndroidDriverInit {
   public static void quit() {
     driver.quit();
   }
-
 }

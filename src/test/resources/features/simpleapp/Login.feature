@@ -17,3 +17,11 @@ Feature: Login
     When user input username "invalid"
     When user input password "invalid"
     When user click button login
+
+  @test @positive
+  Scenario: Random function1
+    And long press on login button
+
+  @test @positive
+  Scenario: Random function2
+    And long press on login button

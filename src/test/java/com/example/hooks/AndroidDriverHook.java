@@ -21,16 +21,16 @@ public class AndroidDriverHook {
     AndroidDriverInit.quit();
   }
 
-  @BeforeStep
-  public void beforeStep() {
+//  @BeforeStep
+//  public void beforeStep() {
+//
+//  }
 
-  }
-
-  @AfterStep
-  public void afterStep(Scenario scenario) {
-    TakesScreenshot screenshot = AndroidDriverInit.driver;
-    byte[] imageByte = screenshot.getScreenshotAs(OutputType.BYTES);
-    scenario.attach(imageByte, "image/png", scenario.getId());
-  }
+//  @AfterStep
+//  public void afterStep(Scenario scenario) {
+//    TakesScreenshot screenshot = AndroidDriverInit.driver;
+//    byte[] imageByte = screenshot.getScreenshotAs(OutputType.BYTES);
+//    scenario.attach(imageByte, "image/png", scenario.getId());
+//  }
 
 }

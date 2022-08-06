@@ -9,5 +9,4 @@ public class ListPageSteps extends BaseTest {
   public void userDoScroll() {
     listPage.swipeList();
   }
-
 }

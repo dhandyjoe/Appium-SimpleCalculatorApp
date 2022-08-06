@@ -12,22 +12,22 @@ import org.openqa.selenium.Point;
 public class ListPage extends BasePageObject {
 
   public void swipeList() {
-//    TouchAction action = new TouchAction(getDriver());
-//    AndroidElement containerList = find(MobileBy.id("recycler_view"));
-//    Point coordinate = containerList.getCenter();
-//    PointOption start = PointOption.point(coordinate);
-//    PointOption end = PointOption.point(coordinate.getX(), coordinate.getY() + -1000);
-//    //builder
-//    action
-//        .press(start)
-//        .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
-//        .moveTo(end)
-//        .release()
-//        .perform();
+    TouchAction action = new TouchAction(getDriver());
+    AndroidElement containerList = find(MobileBy.id("recycler_view"));
+    Point coordinate = containerList.getCenter();
+    PointOption start = PointOption.point(coordinate);
+    PointOption end = PointOption.point(coordinate.getX(), coordinate.getY() + -1000);
+    //builder
+    action
+        .press(start)
+        .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+        .moveTo(end)
+        .release()
+        .perform();
 
-    AndroidElement element = find(MobileBy.AndroidUIAutomator(
-        "new UiScrollable(new UiSelector().scrollable(true))" +
-            ".scrollIntoView(new UiSelector().text(\"List ke-60\"))"));
+//    AndroidElement element = find(MobileBy.AndroidUIAutomator(
+//        "new UiScrollable(new UiSelector().scrollable(true))" +
+//            ".scrollIntoView(new UiSelector().text(\"List ke-60\"))"));
   }
 
 }

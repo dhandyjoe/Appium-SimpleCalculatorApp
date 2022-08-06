@@ -41,4 +41,10 @@ public class LoginPageSteps extends BaseTest {
     //Hamcrest
     MatcherAssert.assertThat(isDisplayed, Matchers.equalTo(true));
   }
+
+  @Given("long press on login button")
+  public void longPressOnLoginButton() {
+    loginPage.longPressBtnLogin();
+  }
+
 }
