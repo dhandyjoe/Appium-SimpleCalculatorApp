@@ -11,7 +11,7 @@ Feature: Adding Numbers
   @sample
   Scenario: Plus function
     When user input first number "10"
-    And user click spinner operator
+#    And user click spinner operator
     And user choose "plus" operator
     And user input second number "5"
     And click button calculate
@@ -20,7 +20,7 @@ Feature: Adding Numbers
   @sample
   Scenario: Minus function
     When user input first number "10"
-    And user click spinner operator
+#    And user click spinner operator
     And user choose "minus" operator
     And user input second number "5"
     And click button calculate
@@ -29,7 +29,7 @@ Feature: Adding Numbers
   @sample
   Scenario: Multiplication function
     When user input first number "10"
-    And user click spinner operator
+#    And user click spinner operator
     And user choose "multiplication" operator
     And user input second number "5"
     And click button calculate
@@ -38,7 +38,7 @@ Feature: Adding Numbers
   @sample
   Scenario: Division function
     When user input first number "10"
-    And user click spinner operator
+#    And user click spinner operator
     And user choose "division" operator
     And user input second number "5"
     And click button calculate

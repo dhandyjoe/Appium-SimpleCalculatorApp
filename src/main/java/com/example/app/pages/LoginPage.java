@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends BasePageObject {
 
+  By toastFailedLogin = MobileBy.xpath("//android.widget.Toast[contains(@text,'Login failed')]");
+
   public void inputUsername(String username) {
 //    By locator = MobileBy.id("username");
 //    AndroidElement tfUsername = driver.findElement(locator);
@@ -34,5 +36,9 @@ public class LoginPage extends BasePageObject {
 
   public void longPressBtnLogin() {
     longPress(MobileBy.id("login"));
+  }
+
+  public void toastFailedLogin() {
+    toast(toastFailedLogin);
   }
 }

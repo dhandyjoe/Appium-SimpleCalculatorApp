@@ -18,6 +18,6 @@ public class ListPageSteps extends BaseTest {
 
     @Then("toast should appear twice")
     public void toastShouldAppearTwice() {
-        listPage.waitToast();
+        listPage.toastFirstList();
     }
 }

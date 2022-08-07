@@ -47,4 +47,8 @@ public class LoginPageSteps extends BaseTest {
     loginPage.longPressBtnLogin();
   }
 
+  @Then("toast should appear with text Login Failed")
+  public void toastShouldAppearWithTextLoginFailed() {
+    loginPage.toastFailedLogin();
+  }
 }

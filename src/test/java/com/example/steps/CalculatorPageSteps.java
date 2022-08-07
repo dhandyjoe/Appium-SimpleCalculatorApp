@@ -15,11 +15,12 @@ public class CalculatorPageSteps extends BaseTest {
 
     @And("user click spinner operator")
     public void userClickSpinnerOperator() {
-        calculatorPage.clickSpinnerOperator();
+
     }
 
     @And("user choose {string} operator")
     public void userChoosePlusOperator(String operator) {
+        calculatorPage.clickSpinnerOperator();
         calculatorPage.chooseSpinnerOperator(operator);
     }
 

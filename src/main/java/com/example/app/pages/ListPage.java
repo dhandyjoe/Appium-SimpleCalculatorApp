@@ -43,7 +43,7 @@ public class ListPage extends BasePageObject {
     doubleTap(listRecycleView1);
   }
 
-  public void waitToast() {
+  public void toastFirstList() {
     toast(toastList);
   }
 }
