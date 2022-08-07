@@ -10,5 +10,4 @@ public class NavigationMenuSteps extends BaseTest {
     navigationMenu.clickHamburgerBtn();
     navigationMenu.clickListMenu();
   }
-
 }

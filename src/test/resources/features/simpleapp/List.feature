@@ -12,3 +12,12 @@ Feature: Login
   @test @positive
   Scenario: Verify user successfully login when input valid email and password
     And user do scroll
+
+  @test @positive
+  Scenario: Long press function
+    And long press on login button
+
+  @test @positive
+  Scenario: Tap multiple function
+    When user double tap in first list
+    Then toast should appear twice
